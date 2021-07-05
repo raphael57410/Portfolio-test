@@ -1,0 +1,42 @@
+
+.main--container {
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: 3em;
+}
+
+.main--container.main--container--dark {
+  display: flex;
+  background-color: black;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  font-family: 'Viaoda Libre', cursive;
+  font-size: 3em;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .main--container{
+    font-size: 0.8em;
+  }
+  .main--container.main--container--dark{
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main--container{
+    font-size: 1.5em;
+  }
+  .main--container.main--container--dark{
+    font-size: 1.5em;
+  }
+}

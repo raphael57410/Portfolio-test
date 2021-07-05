@@ -1,0 +1,26 @@
+.footer--container {
+    display: flex;
+    width: 50%;
+    margin: 10px;
+    background-color: #EDF5E1;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: space-around;
+
+    > a {
+        display: flex;
+        align-items: center;
+    }
+
+    svg {
+        margin: 10px;
+        color: black;
+    }
+}
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .footer--container{
+        width: 100%;
+    }
+   
+  }

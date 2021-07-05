@@ -1,0 +1,68 @@
+.main--content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #EDF5E1;
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    justify-content: center;
+    align-items: center;
+    height: 70%;
+
+
+    .picture--container{
+        background-image: url('../img/photoDeProfil2.jpg');
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+    }
+
+    .title--content {
+        margin: 0;
+        background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+	    background-size: cover;
+	    color: transparent;
+	    -moz-background-clip: text;
+	    -webkit-background-clip: text;
+    }
+
+    .text--content {
+        width: 50%;
+        text-align: center;
+        font-size: 0.7em;
+        font-weight: bold;
+        line-height: 2em;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .main--content{
+        height: 600px;
+        .title--content{
+            margin-top: 160px;
+        }
+        .text--content{
+        font-size: 1em;
+        }
+
+        .picture--container{
+            left: 20%;
+            top: 10px;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .main--content{
+        .picture--container{
+            left: 0;
+            top: 100px;
+        }
+    }
+  }

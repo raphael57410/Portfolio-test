@@ -1,0 +1,39 @@
+.main--container {
+justify-content: start;
+.contact--container{
+    text-align: center;
+
+    .form--container{
+        background-color: #EDF5E1;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        > form {
+            margin: 10px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+
+            > input {
+                width: 50%;
+                margin: 10px;
+                height: 30px;
+                border-radius: 10px;
+                border: none;
+                text-align: center;
+                &:focus{
+                    outline: none;
+                    border: solid 1px lightblue;
+                }
+            }
+
+            > span {
+                color: red;
+            }
+
+            .textField{
+                width: 50%;
+            }
+        }
+    }
+}
+}

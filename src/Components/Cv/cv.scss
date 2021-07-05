@@ -1,0 +1,31 @@
+.cv--container{
+    margin-top: 10px;
+
+    .cv--content {
+        display: flex;
+
+        > a {
+            margin: 10px;
+            color: blanchedalmond;
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .cv--container{
+        height: 100vh;
+        .cv--content{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 100%;
+            > a {
+                width: 100%;
+                text-align: center;
+            }
+            .cv--picture{
+                width: 90%;
+            }
+        } 
+    }  
+}
