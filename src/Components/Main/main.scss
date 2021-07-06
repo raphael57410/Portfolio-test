@@ -11,6 +11,15 @@
     align-items: center;
     height: 70%;
 
+    > h2 {
+        font-size: 40px;
+        text-align: center;
+        width: 100%;
+        span{
+            color: crimson;
+            text-decoration: underline;
+        }
+    }
 
     .picture--container{
         background-image: url('../img/photoDeProfil2.jpg');
@@ -23,13 +32,24 @@
     }
 
     .title--content {
-        margin: 0;
-        background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
-	    background-size: cover;
-	    color: transparent;
-	    -moz-background-clip: text;
-	    -webkit-background-clip: text;
+
+        .title {
+            margin: 0;
+            background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+            background-size: cover;
+            color: transparent;
+            -moz-background-clip: text;
+            -webkit-background-clip: text;
+        }
+        > h2 {
+            font-size: 50px;
+            span{
+                color: crimson;
+            }
+        }
+        
     }
+    
 
     .text--content {
         width: 50%;
