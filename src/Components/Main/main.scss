@@ -65,8 +65,17 @@
     .main--content{
         height: 600px;
         .title--content{
-            margin-top: 160px;
+
+            .title{
+            margin-top: 190px;
+            }
+
+            h2{
+                font-size: inherit;
+            }
+
         }
+        
         .text--content{
         font-size: 1em;
         }

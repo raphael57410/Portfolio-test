@@ -16,7 +16,7 @@ const Main = () => {
 
   return (
     <div className="main--content">
-      <div className="picture--container"></div>*
+      <div className="picture--container"></div>
       <div className='title--content'>
         <h1 className="title">Bienvenue sur mon portfolio</h1>
         <h2>Demmerle Raphael <span ref={textRef}></span></h2>
