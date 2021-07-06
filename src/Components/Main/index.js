@@ -1,22 +1,24 @@
 import './main.scss';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { init } from 'ityped'
 
 const Main = () => {
 
   const textRef = useRef();
+  const [pictureClassname, setPictureClassename] = useState('picture--container');
 
   useEffect(() => {
     init(textRef.current, { 
       showCursor: false,
       typeSpeed:  200,
       strings: ['Developpeur Web'] });
+      setPictureClassename('picture--container-active');
   },[]);
 
 
   return (
     <div className="main--content">
-      <div className="picture--container"></div>
+      <div className={pictureClassname}></div>
       <div className='title--content'>
         <h1 className="title">Bienvenue sur mon portfolio</h1>
         <h2>Demmerle Raphael <span ref={textRef}></span></h2>

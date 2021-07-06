@@ -10,6 +10,7 @@
     justify-content: center;
     align-items: center;
     height: 70%;
+    overflow: hidden;
 
     > h2 {
         font-size: 40px;
@@ -24,11 +25,22 @@
     .picture--container{
         background-image: url('../img/photoDeProfil2.jpg');
         position: absolute;
+        left: -200px;
+        top: 20px;
+        border-radius: 50%;
+        width: 180px;
+        height: 180px;
+    }
+
+    .picture--container-active{
+        background-image: url('../img/photoDeProfil2.jpg');
+        position: absolute;
         left: 20px;
         top: 20px;
         border-radius: 50%;
         width: 180px;
         height: 180px;
+        transition: all 2s ease-out;
     }
 
     .title--content {
@@ -54,7 +66,7 @@
     .text--content {
         width: 50%;
         text-align: center;
-        font-size: 0.7em;
+        font-size: 0.6em;
         font-weight: bold;
         line-height: 2em;
     }
