@@ -58,7 +58,7 @@ const Contact = () => {
             />
             {errors.exampleRequired && <span>Un champ n'est pas rempli!</span>}
             {message && <span>{message}</span>}
-            <input type="submit" />
+            <input className="submit--button" type="submit" />
         </form>
       </div>
     </div>

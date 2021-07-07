@@ -33,6 +33,12 @@ justify-content: start;
             .textField{
                 width: 50%;
             }
+            .submit--button{
+                &:hover{
+                    cursor: pointer;
+                    background-color: grey;
+                }
+            }
         }
     }
 }
