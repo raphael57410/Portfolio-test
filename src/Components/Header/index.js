@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
 
-  const pathHome =     window.location.href === 'http://localhost:3000/' ? true : false;
-  const pathCV =       window.location.href === 'http://localhost:3000/cv' ? true : false;
-  const pathProjects = window.location.href === 'http://localhost:3000/projets' ? true : false;
-  const pathContact =  window.location.href === 'http://localhost:3000/contact' ? true : false;
+  const pathHome =     window.location.href === window.location.origin + '/' ? true : false;
+  const pathCV =       window.location.href === window.location.origin + '/cv' ? true : false;
+  const pathProjects = window.location.href === window.location.origin + '/projets' ? true : false;
+  const pathContact =  window.location.href === window.location.origin + '/contact' ? true : false;
 
   
   return (

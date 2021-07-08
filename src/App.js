@@ -12,6 +12,7 @@ import Footer from './Components/Footer';
 import Projets from './Components/Projets';
 import Contact from './Components/Contact';
 import Cv from './Components/Cv';
+import NotFound from './Components/NotFound';
 
 const App = () => {
   
@@ -36,6 +37,7 @@ const App = () => {
               <Header />
               <Contact />
             </Route>
+            <Route component={NotFound} />
         </Switch>
       </div>
     </Router>
