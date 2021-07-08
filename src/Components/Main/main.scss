@@ -92,7 +92,7 @@
         font-size: 1em;
         }
 
-        .picture--container{
+        .picture--container-active{
             left: 20%;
             top: 10px;
         }
@@ -101,9 +101,15 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .main--content{
-        .picture--container{
+        .picture--container-active{
             left: 0;
-            top: 100px;
+            top: 200px;
         }
+        .title--content{
+            width: 100%;
+        }
+        .text--content{
+            font-size: 1em;
+            }
     }
   }
