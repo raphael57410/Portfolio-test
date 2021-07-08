@@ -12,7 +12,6 @@ const Contact = () => {
 
 
     const onSubmit = (data, event) => {
-      console.log(process.env.REACT_APP_EMAIL_USER_ID);
       emailjs.sendForm('service_vi1j4u6', 'template_i17ciu1', event.target, `${process.env.REACT_APP_EMAIL_USER_ID}`)
     .then((result) => {
         setMessage('Votre e-mail a été envoyé merci !')
