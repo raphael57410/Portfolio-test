@@ -43,8 +43,8 @@ const Contact = () => {
       <h1>Me contacter part email</h1>
       <div className="form--container">
         <form onSubmit={handleSubmit(onSubmit)}>
-            <input placeholder="Nom et prénom" name="name" {...register("name",{ required: true })} />
-            <input placeholder="Votre adresse mail" name="email" {...register("email", { required: true })} />
+            <input placeholder="Nom et prénom" name="name" {...register("name",{ required: true, minLength: 3 })} />
+            <input placeholder="Votre adresse mail" name="email" {...register("email", { required: true, pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i })} />
             <TextField
                 className="textField"
                 id="outlined-multiline-static"
